@@ -1,0 +1,635 @@
+/* =========================================
+   POWERTRACK - MAIN STYLE
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #061225,
+        #0B1B2B,
+        #061225
+    );
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   LOGIN CONTAINER
+   ========================= */
+
+.auth-container {
+    width: 1050px;
+    max-width: 94%;
+
+    padding: 55px 80px;
+
+    background: #061225;
+
+    border: 2px solid #34475B;
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================
+   LOGO
+   ========================= */
+
+.logo {
+    width: 160px;
+    height: 160px;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFC107;
+
+    border-radius: 50%;
+
+    font-size: 80px;
+
+    box-shadow:
+        0 0 35px rgba(255, 193, 7, 0.35);
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+h1 {
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    font-size: 48px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   SUBTITLE
+   ========================= */
+
+.subtitle {
+    text-align: center;
+
+    color: #8FBBD9 !important;
+
+    font-size: 24px;
+
+    margin-bottom: 65px;
+}
+
+
+/* =========================
+   LABELS
+   ========================= */
+
+label {
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 12px;
+
+    color: #FFFFFF;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   INPUT BOXES
+   ========================= */
+
+.input-icon-box,
+.password-box {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* Email and password input */
+
+.input-icon-box input,
+.password-box input {
+    width: 100%;
+
+    height: 70px;
+
+    padding: 14px 55px;
+
+    background: #F8FBFD;
+
+    color: #111827;
+
+    border: 2px solid #2878B5;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+/* Placeholder */
+
+input::placeholder {
+    color: #6B7280;
+}
+
+
+/* Focus */
+
+.input-icon-box input:focus,
+.password-box input:focus {
+    border-color: #1F6AA5;
+
+    box-shadow:
+        0 0 0 4px rgba(40, 120, 181, 0.18);
+}
+
+
+/* =========================
+   USER / LOCK SVG ICONS
+   ========================= */
+
+.field-icon {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 28px;
+    height: 28px;
+
+    fill: none;
+
+    stroke: #2878B5;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   EYE BUTTON
+   ========================= */
+
+.password-box .eye-button {
+    position: absolute !important;
+
+    right: 10px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    width: 45px !important;
+    height: 45px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    color: #2878B5 !important;
+
+    border: none !important;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    z-index: 3;
+}
+
+.password-box .eye-button:hover {
+    background: transparent !important;
+
+    color: #1F6AA5 !important;
+
+    box-shadow: none !important;
+
+    transform: translateY(-50%) !important;
+}
+
+
+/* =========================
+   FORGOT PASSWORD
+   ========================= */
+
+.forgot-password {
+    text-align: right;
+
+    margin-top: 25px;
+}
+
+.forgot-password a {
+    color: #FFC107;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+   ========================= */
+
+.login-button {
+    width: 100%;
+
+    height: 70px;
+
+    margin-top: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2878B5;
+
+    color: #FFFFFF;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background: #1F6AA5;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(40, 120, 181, 0.35);
+}
+
+
+/* =========================
+   BUTTON ICON
+   ========================= */
+
+.login-icon {
+    margin-right: 12px;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   BOTTOM TEXT
+   ========================= */
+
+.bottom-text {
+    text-align: center;
+
+    margin-top: 45px;
+
+    color: #B8C7D3;
+
+    font-size: 20px;
+}
+
+.bottom-text a {
+    color: #FFC107;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   ADMIN LOGIN
+   ========================= */
+
+.admin-login {
+    text-align: center;
+
+    margin-top: 45px;
+}
+
+.admin-login a,
+.admin-login a:visited,
+.admin-login a:hover,
+.admin-login a:active {
+    color: #FFC107 !important;
+
+    text-decoration: none !important;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.admin-login a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* =========================
+   ERROR MESSAGE
+   ========================= */
+
+.error {
+    background: #FDECEC;
+
+    border: 1px solid #DC3545;
+
+    color: #B02A37;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+   ========================= */
+
+.success {
+    background: #EAF6EE;
+
+    border: 1px solid #198754;
+
+    color: #146C43;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   BACK LINK
+   ========================= */
+
+.back {
+    display: inline-block;
+
+    background: #2878B5;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    margin: 5px;
+}
+
+
+/* =========================
+   CARD
+   ========================= */
+
+.card {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: #FFFFFF;
+
+    color: #1F2937;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(18, 53, 91, 0.15);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 0;
+    }
+
+    .auth-container {
+        width: 94%;
+
+        padding: 35px 25px;
+
+        border-radius: 18px;
+    }
+
+    .logo {
+        width: 85px;
+        height: 85px;
+
+        margin-bottom: 25px;
+
+        font-size: 42px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+
+        margin-bottom: 40px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .input-icon-box input,
+    .password-box input {
+        height: 56px;
+
+        font-size: 16px;
+
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .field-icon {
+        width: 22px;
+        height: 22px;
+
+        left: 14px;
+    }
+
+    .forgot-password a {
+        font-size: 16px;
+    }
+
+    .login-button {
+        height: 58px;
+
+        font-size: 19px;
+    }
+
+    .bottom-text {
+        font-size: 16px;
+    }
+
+    .admin-login a {
+        font-size: 18px;
+    }
+}
+/* ===== PROFESSIONAL EMAIL & PASSWORD BOXES ===== */
+
+.input-icon-box,
+.password-box {
+    position: relative !important;
+    width: 100% !important;
+}
+
+/* Input fields */
+.input-icon-box input,
+.password-box input {
+    width: 100% !important;
+    height: 64px !important;
+
+    padding: 15px 55px !important;
+
+    background: #F8FAFD !important;
+    color: #111827 !important;
+
+    border: 2px solid #2878B5 !important;
+    border-radius: 12px !important;
+
+    font-size: 17px !important;
+    outline: none !important;
+
+    box-sizing: border-box !important;
+}
+
+/* When clicking inside the box */
+.input-icon-box input:focus,
+.password-box input:focus {
+    border-color: #1677D2 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(22, 119, 210, 0.18) !important;
+}
+
+/* User and Lock icons */
+.field-icon {
+    position: absolute !important;
+
+    left: 18px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    width: 25px !important;
+    height: 25px !important;
+
+    fill: none !important;
+    stroke: #12355B !important;
+    stroke-width: 2 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+
+    z-index: 5 !important;
+}
+
+/* Eye button */
+.password-box .eye-button {
+    position: absolute !important;
+
+    right: 10px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    color: #12355B !important;
+
+    border: none !important;
+
+    font-size: 20px !important;
+
+    z-index: 6 !important;
+}
+
+.password-box .eye-button:hover {
+    background: transparent !important;
+    color: #2878B5 !important;
+    box-shadow: none !important;
+    transform: translateY(-50%) !important;
+}
